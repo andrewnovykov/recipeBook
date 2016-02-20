@@ -9,11 +9,12 @@ Recipes.allow({
 
 Ingredient = new SimpleSchema({
 	name: {
-		type: String
-		//label: "Name"
+		type: String,
+		label: "Название"
 	},
 	amount: {
-		type: String
+		type: String,
+		label: "Количество"
 	}
 });
 
@@ -21,14 +22,15 @@ Ingredient = new SimpleSchema({
 RecipeSchema = new SimpleSchema({
 	name: {
 		type: String,
-		label: "Name"
+		label: "Название"
 	},
 	desc: {
 		type: String,
-		label: "Description"
+		label: "Описание"
 	},
 	ingredients: {
-		type: [Ingredient]
+		type: [Ingredient],
+		label: "Ингридиенты"
 	},
 	inMenu: {
 		type: Boolean,
